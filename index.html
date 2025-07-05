@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+</head>
+
+<body>
+    <div class="wrapper">
+        <p id="reload">↻</p>
+        <table>
+            <caption>
+                <h1>Score</h1>
+            </caption>
+            <tr>
+                <td id="name1" cell playername> Player: 1</td>
+                <td id="name2" cell playername>Player: 2</td>
+            </tr>
+            <tr>
+                <td id="score1" cell>0</td>
+                <td id="score2" cell>0</td>
+            </tr>
+        </table>
+        <div id="player_info">Player: 1 win</div>
+        <div class="main_box">
+            <div class="first_row row">
+                <div id="first" class="input_box"></div>
+                <div id="second" class="input_box"></div>
+                <div id="third" class="input_box"></div>
+            </div>
+            <div class="second_row row">
+                <div id="fourth" class="input_box"></div>
+                <div id="fifth" class="input_box"></div>
+                <div id="sixth" class="input_box"></div>
+            </div>
+            <div class="third_row row">
+                <div id="seventh" class="input_box"></div>
+                <div id="eighth" class="input_box"></div>
+                <div id="ninth" class="input_box"></div>
+            </div>
+        </div>
+        <div id="clear_btn">Clear</div>
+    </div>
+    <div class="second_wrapper">
+        <div class="input_name">
+            <div id="set_name_text">Enter Player Name <div id="crossbtn">×</div>
+            </div>
+            <input type="text" placeholder="Player: 1" id="player_input1" maxlength="8">
+            <input type="text" placeholder="Player: 2" id="player_input2" maxlength="8">
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
